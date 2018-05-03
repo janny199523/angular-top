@@ -1,0 +1,121 @@
+<div class="overview-block-ptb main-content no-hight find-flight fullbg">
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <a routerLink="/" class="iq-logo">
+            <img src="assets/images/logo.png" alt="">
+          </a>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <span class="iq-mr-15">
+                <img src="assets/images/home-img.jpg" alt="logo">
+              </span>Home</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item active" routerLink="/">Home</a>
+              <a class="dropdown-item" routerLink="/client/wallet">Wallet</a>
+              <a class="dropdown-item" routerLink="/client/profile">Profile</a>
+              <a class="dropdown-item" routerLink="#">Log Out </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container iq-mt-80">
+      <div class="row justify-content-lg-center">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+          <div class="iq-form">
+            <div class="heading-title">
+              <h5 class="title iq-font-white">Find Your Flight</h5>
+            </div>
+            <form>
+              <div class="row">
+                <div class="col-lg-5">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="exampleInputTicket" placeholder="Ticket Number">
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="exampleInputLastName" placeholder="Last Name">
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <button type="button" class="button btn-full" (click)="chooseOne()">Send</button>
+                </div>
+              </div>
+            </form>
+            <hr class="iq-mtb-20">
+            <div class="text-center">
+              <div class="iq-font-white iq-tw-6">
+                <a routerLink="/client/loginreg" class="iq-link iq-tw-6">Already have an account?</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+    </div>
+
+</div>
+
+
+<div class="modal find-model fade thechoice" id="ChoiceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body iq-plr-20 iq-pt-40 iq-pb-40">
+        <div class="heading-title black">
+          <h5 class="title">The choice is yours, pick one!</h5>
+        </div>
+        <ul>
+          <li class="iq-mtb-10">
+            <button type="button" class="button green close-modal" (click)="openVoucher()">Claim $50 flight voucher</button>
+          </li>
+          <li class="iq-mtb-10">Or</li>
+          <li class="iq-mtb-10">
+            <button type="button" class="button close-modal" (click)="openClaim()">Claim 1000 miles</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade claim-model" id="VoucherModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body iq-plr-20 iq-pt-40 iq-pb-40 text-center">
+        <div class="heading-title black">
+          <h5 class="title">Voucher has been added to your wallet</h5>
+        </div>
+        <a routerLink="/client/wallet" class="button" data-dismiss="modal">View Wallet</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade miles-model" id="ClaimModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body iq-plr-20 iq-pt-40 iq-pb-40 text-center">
+        <div class="heading-title black">
+          <h5 class="title">Claim 1000 miles</h5>
+        </div>
+        <a routerLink="/client/wallet" class="button green " data-dismiss="modal">View Wallet</a>
+      </div>
+    </div>
+  </div>
+</div>

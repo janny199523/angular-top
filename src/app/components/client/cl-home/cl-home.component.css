@@ -1,0 +1,12 @@
+.fullbg{
+    background-image: url('/assets/images/bg/bg-2.jpg'); 
+    background-position: center center;
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .fullbg{
+    height: 130vh !important;
+    }
+}

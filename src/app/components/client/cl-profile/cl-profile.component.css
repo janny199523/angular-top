@@ -1,0 +1,23 @@
+.fullbg{
+    background-image: url('/assets/images/bg/bg-2.jpg'); 
+    background-position: center center;
+    background-attachment: fixed; 
+    background-size: cover;
+    height: 120vh !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .fullbg{
+    height: 180vh !important;
+    }
+}
+
+.mine{
+    cursor: pointer;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+.mine:hover{
+    color: #4d8b1f !important;
+    -webkit-transition: all 0.5s ease-in-out;
+}

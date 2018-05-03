@@ -1,0 +1,119 @@
+<div class="overview-block-ptb main-content no-hight find-flight fullbg">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <a routerLink="/" class="iq-logo">
+          <img src="assets/images/logo.png" alt="">
+        </a>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <span class="iq-mr-15">
+              <img src="assets/images/client-img.jpg" alt="logo">
+            </span>Profile</button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" routerLink="/">Home</a>
+            <a class="dropdown-item" routerLink="/client/wallet">Wallet</a>
+            <a class="dropdown-item active" routerLink="/client/profile">Profile</a>
+            <a class="dropdown-item" routerLink="#">Log Out </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container iq-mt-80">
+    <div class="row justify-content-lg-center">
+      <div class="col-lg-6">
+        <div class="iq-form iq-profile">
+          <div class="heading-title">
+            <h5 class="title iq-font-white">Profile</h5>
+          </div>
+          <div class="media-box">
+            <a  class="iq-icon">
+              <i class="fa fa-camera"></i>
+            </a>
+            <div class="iq-ml-20">
+              <h6 class="iq-tw-6 iq-font-white">Michael Smith</h6>
+              <p class="iq-font-white iq-mt-10 small">TrustaBit user since January 2018</p>
+            </div>
+          </div>
+          <div class="iq-mt-30">
+            <h6 class="iq-font-white">Basic Profile</h6>
+            <ul class="iq-font-white iq-mt-20 profile-aria">
+              <li class="iq-mb-10">
+                <i class="fa fa-user iq-mr-15"></i>
+                <span>Michael Smith</span>
+              </li>
+              <li class="iq-mb-10">
+                <i class="fa fa-globe iq-mr-15"></i>
+                <span class="iq-mail">http://www.michaelsmith.com</span>
+              </li>
+              <li class="iq-mb-10">
+                <i class="fa fa-info-circle iq-mr-15"></i>
+                <span>Here's a little bit about me. And so it goes on and on and on.</span>
+              </li>
+              <li class="iq-mb-10">
+                <i class="fa fa-envelope iq-mr-15"></i>
+                <span class="iq-mail">michaels@mith.com</span>
+              </li>
+              <li class="iq-mb-10">
+                <i class="fa fa-phone iq-mr-15"></i>
+                <span>+1 510 486 1234</span>
+              </li>
+              <li class="iq-mb-10">
+                <i class="fa fa-user iq-mr-15"></i>
+                <span>Michael Smith</span>
+              </li>
+            </ul>
+            <hr class="iq-mtb-20">
+            <p class="iq-font-white">Change Password</p>
+            <a class="iq-link no-brd iq-tw-6 mine" (click)="openPasswordModal()">
+              <i class="fa fa-unlock-alt iq-mr-15"></i> Enter New Password</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+<div class="modal fade password-model" id="PasswordModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body iq-plr-30 iq-pt-40 iq-pb-40">
+        <h6>Basic Profile</h6>
+        <form class="iq-mt-20">
+          <div class="form-group">
+            <input type="text" class="form-control" id="exampleInputPassword" placeholder="Enter New Password">
+          </div>
+          <div class="form-group iq-mt-20">
+            <input type="text" class="form-control" id="exampleInputRePassword" placeholder="Password New Password">
+          </div>
+        </form>
+        <h6 class="iq-tw-6 iq-mt-30">Accessibility</h6>
+        <p class="iq-mt-10">Adds patterns to labels so that they are distinguishable by more than color.</p>
+        <h6 class="iq-tw-6 iq-mt-30">About</h6>
+        <ul class="iq-mt-20">
+          <li class="iq-mb-10">
+            <a href="#">
+              <i class="fa fa-info-circle iq-mr-15"></i>Help</a>
+          </li>
+          <li class="iq-mb-10">
+            <a href="#">
+              <i class="fa fa-lock iq-mr-15"></i>Privacy</a>
+          </li>
+          <li class="iq-mb-10">
+            <a href="#">
+              <i class="fa fa-file iq-mr-15"></i>Term and Services</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,96 @@
+<div class="overview-block-ptb main-content no-hight find-flight fullbg">
+
+  <section>
+    <div class="container">
+      <div class="row justify-content-lg-center">
+        <div class="col-lg-6">
+  
+          <div class="iq-form">
+            <div class="text-center">
+              <a routerLink="/" class="iq-logo">
+                <img src="assets/images/logo.png" alt="">
+              </a>
+            </div>
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="login-tab" data-toggle="pill" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="register-tab" data-toggle="pill" href="#register" role="tab" aria-controls="register" aria-selected="false">Register</a>
+              </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content iq-mt-50" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                <div class="iq-login">
+                  <form>
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="loginemail" placeholder="Email">
+                    </div>
+                    <div class="form-group iq-mt-20">
+                      <input type="name" class="form-control" id="loginpassword" placeholder="Password">
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="forgot-password text-right">
+                          <a href="#" class="iq-font-white iq-tw-6">Forgot Password</a>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="submit" class="button iq-mt-30">Sign in
+                    </button>
+                  </form>
+                  <hr class="iq-mtb-20">
+                  <div class="text-center">
+                    <div class="iq-font-white iq-tw-6">Don't Have an Account?
+                      <a class="iq-link iq-tw-6 mine" (click)="goRegister()">Register Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                <div class="iq-register">
+                  <form>
+                    <div class="form-group">
+                      <input type="firstname" class="form-control" id="regfirstname" placeholder="First Name">
+                    </div>
+                    <div class="form-group iq-mt-20">
+                      <input type="lastname" class="form-control" id="reglastname" placeholder="Last Name">
+                    </div>
+                    <div class="form-group iq-mt-20">
+                      <input type="Email" class="form-control" id="regemail" placeholder="Email">
+                    </div>
+                    <div class="form-group iq-mt-20">
+                      <input type="password" class="form-control" id="regpassword" placeholder="Password">
+                    </div>
+                    <div class="iq-font-white iq-tw-6 small-font">By signing up, you are agree with the
+                      <a href="#" class="iq-link iq-tw-6">Terms of Services</a> and
+                      <a href="#" class="iq-link iq-tw-6">Privacy Policy</a>
+                    </div>
+                    <div class="row iq-mt-40 align-items-center">
+                      <div class="col-md-4">
+                        <button type="submit" class="button">Sign Up</button>
+                      </div>
+                      <div class="col-md-8 forgot-password text-right">
+                        <a (click)="goLogin()" class="iq-link iq-tw-6 mine">Already have an account?</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<ng4-loading-spinner [threshold]="1000" [template]="loadTemplate" [loadingText]="''" [zIndex]="999"></ng4-loading-spinner>

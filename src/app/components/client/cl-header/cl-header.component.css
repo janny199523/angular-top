@@ -1,0 +1,89 @@
+.logined_user
+{
+    margin-bottom: 15px;
+}
+
+.logined_user i
+{
+    margin-right: 5px;
+    color : #f26522;
+}
+
+.post_food
+{
+    background-color: #f36524;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.post_food:hover{
+    background-color: #0072bc
+}
+
+.navwidget{
+    margin: 10px 0px;
+    height: 45px;
+}
+
+.mun:before{
+    background-image: none !important;
+}
+
+
+#ex4 .p1[data-count]:after{
+  position:absolute;
+  right:10%;
+  top:8%;
+  content: attr(data-count);
+  font-size:40%;
+  padding: 4px 6px;
+  border-radius:50%;
+  line-height:1em;
+  color: white;
+  background:rgba(255,0,0,.85);
+  text-align:center;
+  min-width: 1em;
+}
+
+#ex4 .fa-stack{
+    margin-right: -5px;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+li i{
+    font-size: 20px;
+}
+
+.language_select{
+    height: 30px;
+    border: 1px solid #f36524;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.fa-language{
+    font-size: 20px;
+    color: #f36524;
+}
+
+.shoppingbg{
+    position: relative; 
+    font-size: 20px; 
+    color: #f36524;
+}
+
+.amount{
+    position: absolute; 
+    left: 12px; 
+    top: -12px; 
+    color: white; 
+    padding: 4px 7px; 
+    background-color: red; 
+    border-radius: 100px; 
+    font-size: 13px;
+}
